@@ -61,4 +61,27 @@ Restricciones: posibles inconsistencias o datos faltantes en los registros.
 ### Criterios de Éxito en Minería de Datos
 - Lograr modelos con precisión ≥70% en predicción de desvinculación/reincidencia.  
 - Generar indicadores estandarizados y reproducibles.  
-- Entregar visualizaciones útiles (tableros de control, reportes estadísticos) para la gestión institucional.  
+- Entregar visualizaciones útiles (tableros de control, reportes estadísticos) para la gestión institucional.
+
+
+
+## 4. Elaborar Plan de Proyecto
+Plan del Proyecto
+
+- Comprensión del negocio (ya planteada).
+- Comprensión de los datos: exploración inicial, calidad de datos, detección de inconsistencias.
+- Preparación de los datos: limpieza, integración, transformación de variables.
+- Modelado: selección de técnicas estadísticas (regresión, clasificación, supervivencia).
+- Evaluación: validar resultados frente a criterios de éxito.
+- Despliegue: generar reportes, dashboards y recomendaciones para tomadores de decisión.
+
+Evaluación inicial de Herramientas y Técnica
+
+Herramientas estadísticas: Python (pandas, scikit-learn, statsmodels), R.
+Visualización: Power BI, Tableau, Matplotlib.
+
+Modelos posibles:
+ - Regresión logística (factores asociados a desvinculación).
+ - Análisis de supervivencia (tiempos de seguimiento).
+ - Árboles de decisión o Random Forest (clasificación de riesgo).
+
