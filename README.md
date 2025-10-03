@@ -30,3 +30,35 @@ Priorización territorial efectiva: Identificar de manera precisa las localidade
 
 Reducción en los tiempos de respuesta y atención: Disminuir el tiempo promedio desde la detección de un caso hasta la atención integral del NNA, asegurando procesos más ágiles, coordinados y eficientes entre las entidades responsables.
 
+## 2. Evaluar la Situación
+
+### Inventario de Recursos
+Equipo interdisciplinario  
+Apoyo institucional de entidades de protección social y entes territoriales  
+
+### Requerimientos, Suposiciones y Restricciones
+Se asume que los registros son representativos de la población atendida.  
+Restricciones: posibles inconsistencias o datos faltantes en los registros.  
+
+### Riesgos y Contingencias
+
+### Terminología
+- **NNA:** Niños, Niñas y Adolescentes.  
+- **Ficha:** Registro individual de intervención.  
+- **Red/localidad:** Entidad o territorio responsable de la atención.  
+- **Estado de ficha:** Apertura, seguimiento, cierre.  
+
+### Costos y Beneficios
+
+## 3. Determinar Objetivos de Minería de Datos
+
+### Objetivos de Minería de Datos
+- **Descriptivo:** caracterizar a la población atendida y las intervenciones realizadas.  
+- **Predictivo:** identificar factores asociados a la desvinculación exitosa del trabajo infantil.  
+- **Diagnóstico:** evaluar brechas y diferencias en la atención según localidad, profesional o tipo de intervención.  
+- **Prospectivo:** construir modelos de predicción de reincidencia o permanencia en trabajo infantil.  
+
+### Criterios de Éxito en Minería de Datos
+- Lograr modelos con precisión ≥70% en predicción de desvinculación/reincidencia.  
+- Generar indicadores estandarizados y reproducibles.  
+- Entregar visualizaciones útiles (tableros de control, reportes estadísticos) para la gestión institucional.  
