@@ -11,7 +11,7 @@ Este registro permite llevar un seguimiento individual de cada caso, con el fin 
 
 #### Objetivos del negocio
 
-Registrar y consolidar la información de las intervenciones realizadas con niños, niñas y adolescentes (NNA) en riesgo o en situación de trabajo infantil, con el fin de contar con un sistema organizado y confiable que facilite el seguimiento y la rendición de cuentas.
+Registrar y consolidar la información de las intervenciones realizadas con niños, niñas y adolescentes (NNA) en riesgo o en situación de trabajo infantil, con el fin de contar con un sistema organizado y confiable que facilite el seguimiento.
 
 Caracterizar sociodemográficamente a la población atendida, identificando variables como edad, sexo, localidad y condiciones familiares, para comprender mejor los perfiles de los menores y orientar estrategias de prevención y protección.
 
@@ -19,7 +19,7 @@ Analizar la proporción y recurrencia de los casos de intervención, con el prop
 
 Detectar brechas y diferencias significativas en la atención, evaluando los resultados según localidad, tipo de red o perfil profesional que interviene, con el fin de optimizar la asignación de recursos y mejorar la equidad territorial en la cobertura.
 
-Medir el impacto de las intervenciones en la desvinculación del trabajo infantil, identificando los factores asociados al éxito o al fracaso del proceso, con el objetivo de fortalecer las acciones más efectivas y rediseñar aquellas que presenten limitaciones.
+Medir el impacto de las intervenciones en la desvinculación del trabajo infantil, identificando los factores asociados al éxito o al fracaso del proceso.
 
 
 #### Criterios de Éxito del Negocio
@@ -32,23 +32,15 @@ Reducción en los tiempos de respuesta y atención: Disminuir el tiempo promedio
 
 ## 2. Evaluar la Situación
 
-### Inventario de Recursos
-Equipo interdisciplinario  
-Apoyo institucional de entidades de protección social y entes territoriales  
-
 ### Requerimientos, Suposiciones y Restricciones
-Se asume que los registros son representativos de la población atendida.  
+Se asume que los registros son representativos de la población atendida. 
 Restricciones: posibles inconsistencias o datos faltantes en los registros.  
-
-### Riesgos y Contingencias
 
 ### Terminología
 - **NNA:** Niños, Niñas y Adolescentes.  
 - **Ficha:** Registro individual de intervención.  
 - **Red/localidad:** Entidad o territorio responsable de la atención.  
 - **Estado de ficha:** Apertura, seguimiento, cierre.  
-
-### Costos y Beneficios
 
 ## 3. Determinar Objetivos de Minería de Datos
 
