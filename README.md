@@ -33,7 +33,7 @@ Reducción en los tiempos de respuesta y atención: Disminuir el tiempo promedio
 ## 2. Evaluar la Situación
 
 ### Requerimientos, Suposiciones y Restricciones
-Se asume que los registros son representativos de la población atendida. 
+Origen de la base de datos
 Restricciones: posibles inconsistencias o datos faltantes en los registros.  
 
 ### Terminología
