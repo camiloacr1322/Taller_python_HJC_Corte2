@@ -9,18 +9,17 @@ La base corresponde a registros administrativos de intervenciones sociales dirig
 Este registro permite llevar un seguimiento individual de cada caso, con el fin de verificar si la intervención logró que el menor dejara de trabajar o si fue necesario implementar otro tipo de medidas de protección
 
 
-#### Objetivos del negocio
+#### Objetivo General del negocio
 
-Registrar y consolidar la información de las intervenciones realizadas con niños, niñas y adolescentes (NNA) en riesgo o en situación de trabajo infantil, con el fin de contar con un sistema organizado y confiable que facilite el seguimiento.
+Analizar los cambios ocurridos según los diferentes estratos socioeconómicos, a partir de variables previamente seleccionadas con base en criterios demográficos.
 
-Caracterizar sociodemográficamente a la población atendida, identificando variables como edad, sexo, localidad y condiciones familiares, para comprender mejor los perfiles de los menores y orientar estrategias de prevención y protección.
+#### Objetivos especificos 
 
-Analizar la proporción y recurrencia de los casos de intervención, con el propósito de determinar la necesidad de reintervención y de diseñar mecanismos de seguimiento oportuno que garanticen la sostenibilidad de los resultados.
+- Caracterizar y realizar un análisis descriptivo de las variables seleccionadas, comparando sus comportamientos entre los diferentes estratos socioeconómicos.
 
-Detectar brechas y diferencias significativas en la atención, evaluando los resultados según localidad, tipo de red o perfil profesional que interviene, con el fin de optimizar la asignación de recursos y mejorar la equidad territorial en la cobertura.
+- Aplicar pruebas de hipótesis para determinadas variables, con el fin de identificar diferencias significativas entre los estratos socioeconómicos.
 
-Medir el impacto de las intervenciones en la desvinculación del trabajo infantil, identificando los factores asociados al éxito o al fracaso del proceso.
-
+- Desarrollar un modelo analítico enfocado en un solo estrato socioeconómico, que permita profundizar en su comportamiento particular.
 
 #### Criterios de Éxito del Negocio
 
