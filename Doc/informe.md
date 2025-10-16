@@ -114,10 +114,10 @@ La siguiente tabla resume las características generales de cada grupo:
 
 De las variables de ocupación y localidad se observan patrones similares en todos los grupos, aunque con diferencias relevantes entre etapas y género:
 
-- **Clúster 0 – niñas en primera infancia:** 47 % sin ocupación (niñas pequeñas) y 36 % estudiantes. Alta concentración en las localidades de Kennedy, Bosa y Engativá.  
-- **Clúster 5 – niños en primera infancia:** patrón similar al anterior, pero masculino, con mayor presencia en Ciudad Bolívar y Suba.  
-- **Clúster 2 y 4 – infancia:** niños y niñas en edad escolar, casi todos estudiantes (89 % y 84 % respectivamente), distribuidos principalmente en Kennedy, Bosa y Suba.  
-- **Clúster 1 y 3 – adolescencia:** adolescentes hombres y mujeres, en su mayoría estudiantes (83 % y 85 % respectivamente), pero con una ligera presencia de trabajo informal (alrededor del 12 %).  
+- Clúster 0 – niñas en primera infancia: 47 % sin ocupación (niñas pequeñas) y 36 % estudiantes. Alta concentración en las localidades de Kennedy, Bosa y Engativá.  
+- Clúster 5 – niños en primera infancia: patrón similar al anterior, pero masculino, con mayor presencia en Ciudad Bolívar y Suba.  
+- Clúster 2 y 4 – infancia: niños y niñas en edad escolar, casi todos estudiantes (89 % y 84 % respectivamente), distribuidos principalmente en Kennedy, Bosa y Suba.  
+- Clúster 1 y 3 – adolescencia: adolescentes hombres y mujeres, en su mayoría estudiantes (83 % y 85 % respectivamente), pero con una ligera presencia de trabajo informal (alrededor del 12 %).  
 
 ### 4. Relación con el estrato socioeconómico
 
@@ -130,8 +130,8 @@ Los resultados muestran una correspondencia parcial, donde los grupos con mayor 
 | 2. Bajo | 11.1 % | 20.0 % | 18.7 % | 21.5 % | 16.9 % | 11.8 % |
 | 3. Medio-bajo | 8.6 % | 18.8 % | 24.7 % | 21.6 % | 15.3 % | 11.0 % |
 
-El análisis de la tabla evidencia que los **clústeres 0 y 5**, conformados por niños y niñas en primera infancia, concentran las mayores proporciones del **estrato 1 (bajo-bajo)**, reflejando contextos de mayor vulnerabilidad social.  
-En contraste, los **clústeres 1, 2, 3 y 4**, integrados por población infantil y adolescente en edad escolar, se asocian principalmente con los **estratos 2 y 3**, correspondientes a niveles socioeconómicos intermedios.
+El análisis de la tabla evidencia que los clústeres 0 y 5, conformados por niños y niñas en primera infancia, concentran las mayores proporciones del estrato 1 (bajo-bajo), reflejando contextos de mayor vulnerabilidad social.  
+En contraste, los clústeres 1, 2, 3 y 4, integrados por población infantil y adolescente en edad escolar, se asocian principalmente con los estratos 2 y 3, correspondientes a niveles socioeconómicos intermedios.
 
 
 
