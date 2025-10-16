@@ -17,9 +17,9 @@ Una vez depurada la base de datos, se realizó un análisis exploratorio y descr
 
 1. Distribución de estratos socioeconómicos: Los estratos con mayor frecuencia en la base de datos son 2, 3 y 1, siendo el estrato 2 el predominante con 29,520 observaciones, lo que representa 65.6% de la base. Los otros estratos suman solo 26 observaciones en total, siendo el estrato 6 el más preocupante, con únicamente 2 registros. Esto indica una distribución muy desigual de los estratos en la muestra.
 
-2.Relación entre estrato y curso de vida: Se elaboró una gráfica de frecuencia cruzando estrato socioeconómico y curso de vida. El análisis muestra que la mayoría de las observaciones corresponden a niños en su infancia que viven en estratos 2 y 3, reflejando la concentración de la muestra en estos grupos.
+2. Relación entre estrato y curso de vida: Se elaboró una gráfica de frecuencia cruzando estrato socioeconómico y curso de vida. El análisis muestra que la mayoría de las observaciones corresponden a niños en su infancia que viven en estratos 2 y 3, reflejando la concentración de la muestra en estos grupos.
 
-3.Relación entre estrato y nivel educativo: Se realizó una gráfica cruzando estrato socioeconómico y nivel educativo. Sin embargo, esta visualización no aporta información descriptiva relevante, debido a que la mayoría de los datos de nivel educativo son NA, limitando la interpretación de esta variable.
+3. Relación entre estrato y nivel educativo: Se realizó una gráfica cruzando estrato socioeconómico y nivel educativo. Sin embargo, esta visualización no aporta información descriptiva relevante, debido a que la mayoría de los datos de nivel educativo son NA, limitando la interpretación de esta variable.
 
 Conclusión:
 
@@ -54,5 +54,28 @@ Conclusión:
 
 El análisis evidencia que existen diferencias significativas en la edad promedio entre los estratos socioeconómicos, particularmente entre los estratos 1 y 3. Los resultados resaltan la importancia de considerar pruebas no paramétricas cuando los supuestos de normalidad no se cumplen.
 
+Asociación entre estrato socioeconómico y localidad
 
+Con el objetivo de explorar la relación entre el estrato socioeconómico y la localidad, se realizaron los siguientes análisis:
+
+1. Prueba de independencia (Chi-cuadrado)
+
+Se aplicó la prueba de independencia Chi-cuadrado, cuyos resultados indicaron que la localidad y el estrato socioeconómico están asociadas, es decir, no son variables independientes en la muestra.
+
+2. Análisis de correspondencia simple
+
+Dado que se identificó asociación, se llevó a cabo un análisis de correspondencia simple para profundizar en la relación entre ambas variables:
+
+- Las dos primeras dimensiones explican 99.7% de la varianza, lo que indica que capturan prácticamente toda la información de la asociación.
+- Los análisis de contribuciones y cosenos cuadrados confirman que estas dos dimensiones son suficientes para interpretar la relación entre estrato y localidad.
+
+
+3. Resultados gráficos e interpretativos
+La representación gráfica del análisis de correspondencia permitió identificar asociaciones concretas entre estratos y localidades:
+- Estrato bajo 2 : asociado principalmente con Santa Fe, Los Mártires, Chapinero, San Cristóbal, Kennedy, Tunjuelito y Bosa.
+- Estrato 1: asociado con Ciudad Bolívar y Usme.
+- Estrato 5: no se asocia de manera clara con ninguna localidad.
+- Estrato 3: asociado con Fontibón y Puente Aranda.
+- Estrato 4: asociado con Teusaquillo, Antonio Nariño y Barrios Unidos.
+- Estrato 6: asociado con Usaquén y Engativá.
 
