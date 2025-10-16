@@ -79,3 +79,59 @@ La representación gráfica del análisis de correspondencia permitió identific
 - Estrato 4: asociado con Teusaquillo, Antonio Nariño y Barrios Unidos.
 - Estrato 6: asociado con Usaquén y Engativá.
 
+## Análisis de Clústeres
+
+### 1. Objetivo del análisis
+
+Identificar perfiles sociales diferenciados dentro de la población de niños, niñas y adolescentes (NNA) registrada en intervenciones sociales, agrupando observaciones según variables demográficas y contextuales (sexo, curso de vida, ocupación y localidad) mediante análisis de clústeres.  
+El propósito es descubrir patrones naturales sin utilizar una variable dependiente, caracterizar subpoblaciones según sus condiciones sociales y aportar insumos para la segmentación y la planificación de intervenciones.
+
+### 2. Metodología aplicada
+
+Para la construcción de los clústeres se utilizó el algoritmo K-Means, aplicado sobre un conjunto de variables categóricas previamente seleccionadas: SEXO, CURSO DE VIDA, ETNIA, OCUPACIÓN y Localidad_fic.  
+Dado que el método K-Means requiere variables numéricas, se realizó un proceso de codificación tipo One-Hot Encoding, transformando cada categoría en variables binarias que permiten calcular distancias entre observaciones.
+
+La selección del número óptimo de clústeres (k) se realizó a partir de los criterios de la curva del codo (Elbow Method) y el coeficiente de silueta (Silhouette Score).  
+Con base en estos indicadores, se determinó que el valor k = 6 ofrecía la mejor combinación entre cohesión interna y separación entre grupos.
+
+Cada clúster se analizó posteriormente mediante tablas de frecuencias relativas (% por clúster) y cruces con variables sociodemográficas para identificar las características predominantes de cada grupo.  
+Este enfoque permitió obtener perfiles descriptivos sin incluir el estrato socioeconómico como variable dependiente, garantizando un análisis exploratorio independiente de la clasificación oficial.
+
+### 3. Resultados generales
+
+El modelo con k = 6 permitió identificar seis grupos naturales dentro de la población de NNA.  
+
+La siguiente tabla resume las características generales de cada grupo:
+
+| Clúster | Sexo dominante | Etapa del curso de vida | Tamaño (n) |
+|----------|----------------|--------------------------|------------|
+| 0 | Mujer | Primera infancia | 113 |
+| 1 | Hombre | Adolescencia | 186 |
+| 2 | Hombre | Infancia | 197 |
+| 3 | Mujer | Adolescencia | 209 |
+| 4 | Mujer | Infancia | 157 |
+| 5 | Hombre | Primera infancia | 122 |
+
+De las variables de ocupación y localidad se observan patrones similares en todos los grupos, aunque con diferencias relevantes entre etapas y género:
+
+- **Clúster 0 – niñas en primera infancia:** 47 % sin ocupación (niñas pequeñas) y 36 % estudiantes. Alta concentración en las localidades de Kennedy, Bosa y Engativá.  
+- **Clúster 5 – niños en primera infancia:** patrón similar al anterior, pero masculino, con mayor presencia en Ciudad Bolívar y Suba.  
+- **Clúster 2 y 4 – infancia:** niños y niñas en edad escolar, casi todos estudiantes (89 % y 84 % respectivamente), distribuidos principalmente en Kennedy, Bosa y Suba.  
+- **Clúster 1 y 3 – adolescencia:** adolescentes hombres y mujeres, en su mayoría estudiantes (83 % y 85 % respectivamente), pero con una ligera presencia de trabajo informal (alrededor del 12 %).  
+
+### 4. Relación con el estrato socioeconómico
+
+Para evaluar la coherencia social de los grupos formados, se realizó un cruce entre los seis clústeres y el estrato socioeconómico reportado en la base de datos.  
+Los resultados muestran una correspondencia parcial, donde los grupos con mayor vulnerabilidad social se asocian con los estratos más bajos, y aquellos con mayor participación educativa corresponden a niveles socioeconómicos intermedios.
+
+| Estrato | Clúster 0 | Clúster 1 | Clúster 2 | Clúster 3 | Clúster 4 | Clúster 5 |
+|----------|------------|------------|------------|------------|------------|------------|
+| 1. Bajo-bajo | 28.3 % | 6.7 % | 15.0 % | 16.7 % | 8.3 % | 25.0 % |
+| 2. Bajo | 11.1 % | 20.0 % | 18.7 % | 21.5 % | 16.9 % | 11.8 % |
+| 3. Medio-bajo | 8.6 % | 18.8 % | 24.7 % | 21.6 % | 15.3 % | 11.0 % |
+
+El análisis de la tabla evidencia que los **clústeres 0 y 5**, conformados por niños y niñas en primera infancia, concentran las mayores proporciones del **estrato 1 (bajo-bajo)**, reflejando contextos de mayor vulnerabilidad social.  
+En contraste, los **clústeres 1, 2, 3 y 4**, integrados por población infantil y adolescente en edad escolar, se asocian principalmente con los **estratos 2 y 3**, correspondientes a niveles socioeconómicos intermedios.
+
+
+
