@@ -17,7 +17,7 @@ Analizar los cambios ocurridos según los diferentes estratos socioeconómicos, 
 
 - Caracterizar y realizar un análisis descriptivo de las variables seleccionadas, comparando sus comportamientos entre los diferentes estratos socioeconómicos.
 
-- Aplicar pruebas de hipótesis para determinadas variables, con el fin de identificar diferencias significativas entre los estratos socioeconómicos y otras variables cualitativas, tomando como referencia la media de la edad.
+- Aplicar pruebas de hipótesis para determinadas variables, con el fin de identificar diferencias significativas entre los estratos socioeconómicos y otras variables cualitativas, tomando como referencia la media de la edad. Con posibilidad de hacer un analisis de correspondencia simple.
 
 - Desarrollar un modelo analítico enfocado en un solo estrato socioeconómico, que permita profundizar en su comportamiento particular.
 
