@@ -36,12 +36,12 @@ Validez y completitud de los datos: El proceso de depuración y análisis debe a
 Origen de la base de datos
 La información proviene de registros administrativos de intervenciones realizadas a niños, niñas y adolescentes (NNA). La base consolidada integra variables demográficas, educativas, laborales y socioeconómicas, estructuradas para permitir análisis descriptivos y comparativos por estrato socioeconómico.
 
-Suposiciones
-Se asume que los registros corresponden a intervenciones reales y verificadas.
-Las variables incluidas reflejan adecuadamente las condiciones demográficas y sociales del NNA al momento del registro.
-Se considera que la codificación de categorías (sexo, etnia, ocupación, nivel educativo, etc.) es homogénea entre diferentes fuentes o periodos.
+#### Suposiciones
+- Se asume que los registros corresponden a intervenciones reales y verificadas.
+- Las variables incluidas reflejan adecuadamente las condiciones demográficas y sociales del NNA al momento del registro.
+- Se considera que la codificación de categorías (sexo, etnia, ocupación, nivel educativo, etc.) es homogénea entre diferentes fuentes o periodos.
 
-Restricciones: 
+#### Restricciones: 
 - Presencia de valores faltantes o inconsistencias en algunos campos, lo que puede limitar el tamaño efectivo de la muestra.
 - Cobertura geográfica y temporal acotada a los registros disponibles, sin posibilidad de generalización a toda la población.
 - Limitaciones en la actualización de datos, lo cual puede afectar la precisión de ciertas variables.
