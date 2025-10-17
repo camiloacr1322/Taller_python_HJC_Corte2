@@ -103,14 +103,14 @@ El modelo con k = 6 permitió identificar seis grupos naturales dentro de la pob
 
 La siguiente tabla resume las características generales de cada grupo:
 
-| Clúster | Sexo dominante | Etapa del curso de vida | Tamaño (n) |
-|----------|----------------|--------------------------|------------|
-| 0 | Mujer | Primera infancia | 113 |
-| 1 | Hombre | Adolescencia | 186 |
-| 2 | Hombre | Infancia | 197 |
-| 3 | Mujer | Adolescencia | 209 |
-| 4 | Mujer | Infancia | 157 |
-| 5 | Hombre | Primera infancia | 122 |
+| Clúster | Sexo dominante | Etapa del curso de vida | 
+|----------|----------------|--------------------------|
+| 0 | Mujer | Primera infancia | 
+| 1 | Hombre | Adolescencia |
+| 2 | Hombre | Infancia | 
+| 3 | Mujer | Adolescencia | 
+| 4 | Mujer | Infancia | 
+| 5 | Hombre | Primera infancia | 
 
 De las variables de ocupación y localidad se observan patrones similares en todos los grupos, aunque con diferencias relevantes entre etapas y género:
 
