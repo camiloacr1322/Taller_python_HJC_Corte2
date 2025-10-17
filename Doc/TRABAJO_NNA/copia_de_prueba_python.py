@@ -11,7 +11,7 @@ Original file is located at
 
 !pip install prince
 
-!pip install prince
+
 
 import pandas as pd
 import numpy as np
@@ -30,62 +30,7 @@ import prince
 
 df = pd.read_excel('/content/base_datos_completa_NNA_TI_anon.xlsx', sheet_name='BD')
 
-GROUPS = {
-    "identificacion": [
-        "Id_fic", "Base_Origen", "Ficha_fic", "Fecha_intervencion",
-        "Usuario", "TIPO_INTERVENCION", "PERFIL...9", "TIPO INTERVENCIÓN"
-    ],
 
-    "demografia": [
-        "NACIONALIDAD", "SEXO", "GENERO", "ESTADO CIVIL",
-        "FECHA DE NACIMIENTO", "EDAD", "CURSO DE VIDA", "ETNIA",
-        "POBLACIÓN DIFERENCIAL Y DE INCLUSIÓN", "OCUPACIÓN",
-        "IdNivelEducativo", "RazonAbandonoEscolar",
-        "CATEGORÍAS DE LA DISCAPACIDAD", "HABLA ESPAÑOL",
-        "PUEBLO", "VÍNCULO CON EL JEFE DE HOGAR"
-    ],
-
-    "vivienda_y_contexto": [
-        "DIRECCIÓN DE LA VIVIENDA", "ZONA...33", "LOCALIDAD...35",
-        "UPZ/UPR...36", "BARRIO...37", "BARRIO PRIORIZADO...38",
-        "MANZANA DEL CUIDADO...39", "NUMERO DE MANZANA DEL CUIDADO...40",
-        "ESTRATO", "SUBGRUPO SISBEN", "ESTRATO SOCIOECONÓMICO", "VEREDA"
-    ],
-
-    "salud_y_seguridad_social": [
-        "AFILIACIÓN AL SGSSS...30", "NOMBRE EAPB...31",
-        "AFILIACIÓN AL SGSSS...52", "NOMBRE EAPB...53",
-        "CONDICIONES CRÓNICAS", "ENFERMEDADES TRANSMISIBLES Y ETV",
-        "ALERTAS SALUD BUCAL", "ALERTAS INFANCIA", "ALERTAS EN MUJERES"
-    ],
-
-    "educacion_y_nutricion": [
-        "PESO", "TALLA_CM", "CLASIFICACIÓN NUTRICIONAL",
-        "REQUIERE ASESORÍA DE NUTRICIÓN", "ALERTAS EN NUTRICIÓN",
-        "ETAPA DE GESTACIÓN", "ACUDIENTE AUTORIZA VERIFICACIÓN O TOMA DE PESO Y TALLA"
-    ],
-
-    "laboral_y_actividad": [
-        "Sub-Sección => INFORMACIÓN LABORAL", "DIRECCIÓN DEL TRABAJO",
-        "ZONA...57", "LOCALIDAD...59", "UPZ/UPR...60", "BARRIO...61",
-        "¿EN DONDE REALIZA PRINCIPALMENTE SU TRABAJO?",
-        "NOMBRE DE LA UT", "OCUPACIÓN", "NNA DESVINCULADO DE LA ACTIVIDAD LABORAL...108",
-        "ADOLESCENTE TRABAJO PROTEGIDO...111"
-    ],
-
-    "seguimiento_y_intervencion": [
-        "ACOMPAÑAMIENTO 1 - PERFIL", "TEMA TRATADOS", "IEC...69", "FECHA SEGUIMIENTO",
-        "ACOMPAÑAMIENTO 2", "PERFIL...74", "TEMAS TRATADOS...75", "FECHA...77",
-        "ACOMPAÑAMIENTO 3", "PERFIL...81", "TEMAS TRATADOS...82", "FECHA...84",
-        "ACOMPAÑAMIENTO 4", "PERFIL...88", "TEMAS TRATADOS...89", "FECHA...91",
-        "FECHA - SEGUIMIENTO CIERRE", "FECHA - REPOSICIÓN DE PSICÓLOGO O TRABAJADOR SOCIAL POSTERIOR AL SEGUIMIENTO - CIERRE"
-    ],
-
-    "alertas_y_riesgos": [
-        "ALERTAS PSICOSOCIALES...71", "ALERTAS PSICOSOCIALES...78",
-        "ALERTAS PSICOSOCIALES...85", "ALERTAS PSICOSOCIALES...96"
-    ],
-}
 
 # Lista de columnas que quieres conservar
 cols_demograficas = [
