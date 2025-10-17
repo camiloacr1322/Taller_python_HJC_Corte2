@@ -19,7 +19,7 @@ Analizar los cambios ocurridos según los diferentes estratos socioeconómicos, 
 
 - Aplicar pruebas de hipótesis para determinadas variables, con el fin de identificar diferencias significativas entre los estratos socioeconómicos y otras variables cualitativas, tomando como referencia la media de la edad. Con posibilidad de hacer un analisis de correspondencia simple.
 
-- Desarrollar un modelo analítico enfocado en un solo estrato socioeconómico, que permita profundizar en su comportamiento particular.
+- Desarrollar un análisis de clústeres, que permita identificar perfiles sociales dentro de la población y profundizar en el comportamiento particular de los grupos según sus características demográficas, educativas y territoriales.
 
 #### Criterios de Éxito del Negocio
 
