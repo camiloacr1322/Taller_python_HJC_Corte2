@@ -27,6 +27,9 @@ import scipy.stats as stats
 import seaborn as sns
 from scipy.stats import chi2_contingency
 import prince
+from sklearn.cluster import KMeans
+from sklearn.metrics import silhouette_score
+
 
 df = pd.read_excel('/content/base_datos_completa_NNA_TI_anon.xlsx', sheet_name='BD')
 
@@ -394,3 +397,105 @@ plt.xlabel("Dimensión 1")
 plt.ylabel("Dimensión 2")
 plt.legend()
 plt.show()
+
+# Cluster
+
+#ruta_xlsx = "RUTA DE LA BASE DE DATOS"
+#df = pd.read_excel(ruta_xlsx)
+vars_cat = ["SEXO", "CURSO DE VIDA", "ETNIA", "OCUPACIÓN", "Localidad_fic"]
+X_cat = df[vars_cat].copy()
+X_cat = X_cat.dropna().reset_index(drop=True)
+print("Dimensiones X_cat:", X_cat.shape)
+print(X_cat.head())
+
+## One-Hot encoding para usar un método de clúster estándar
+
+X_enc = pd.get_dummies(X_cat, drop_first=False)
+print("Dimensiones codificadas:", X_enc.shape)
+
+ks = range(2, 9)
+inertias = []
+sil_scores = []
+
+for k in ks:
+    km = KMeans(n_clusters=k, n_init=20, random_state=42)
+    labels = km.fit_predict(X_enc)
+    inertias.append(km.inertia_)
+    sil_scores.append(silhouette_score(X_enc, labels))
+
+plt.figure(figsize=(12,4))
+plt.subplot(1,2,1)
+plt.plot(ks, inertias, marker='o')
+plt.title("Curva del codo (Inertia)")
+plt.xlabel("k"); plt.ylabel("Inertia")
+
+plt.subplot(1,2,2)
+plt.plot(ks, sil_scores, marker='o')
+plt.title("Silhouette vs k")
+plt.xlabel("k"); plt.ylabel("Silhouette")
+plt.tight_layout()
+plt.show()
+
+print("Inertias:", dict(zip(ks, inertias)))
+print("Silhouette:", dict(zip(ks, sil_scores)))
+
+k_final = 6  
+km = KMeans(n_clusters=k_final, n_init=20, random_state=42)
+cluster = km.fit_predict(X_enc)
+df_clusters = X_cat.copy()
+df_clusters["cluster"] = cluster
+
+vars_perfil = ["SEXO", "CURSO DE VIDA", "OCUPACIÓN", "Localidad_fic"]  # agrega "PROGRAMA" si la tienes
+
+
+#Función: tabla % por clúster de una variable categórica
+
+def tabla_porcentual(dfc, var):
+    # % por clúster (filas = clusters)
+    ct = pd.crosstab(dfc["cluster"], dfc[var], normalize="index") * 100
+    return ct.round(1)
+
+# Mostrar top-k categorías por clúster para cada variable
+def topk_por_cluster(dfc, var, k=5):
+    ct = pd.crosstab(dfc["cluster"], dfc[var], normalize="index") * 100
+    top = {}
+    for cl in sorted(dfc["cluster"].unique()):
+        fila = ct.loc[cl].sort_values(ascending=False).head(k)
+        top[cl] = fila
+    return top  
+
+for v in vars_perfil:
+    print(f"\n== {v} (% por clúster) ==")
+    print(tabla_porcentual(df_clusters, v))
+    top = topk_por_cluster(df_clusters, v, k=5)
+    print(f"\nTop-5 categorías de {v} por clúster:")
+    for cl, serie in top.items():
+        print(f"  cluster {cl}:\n{serie.to_string()}\n")
+
+# Heatmap por variable (porcentaje dentro de clúster)
+for v in vars_perfil:
+    plt.figure(figsize=(12, 4 + 0.2*len(df_clusters[v].unique())))
+    ct = tabla_porcentual(df_clusters, v)
+    sns.heatmap(ct, annot=True, fmt=".1f", cmap="Blues")
+    plt.title(f"{v} - % por clúster")
+    plt.xlabel(v)
+    plt.ylabel("cluster")
+    plt.tight_layout()
+    plt.show()
+
+# Barras apiladas por variable (porcentaje dentro de clúster)
+for v in vars_perfil:
+    ct = pd.crosstab(df_clusters["cluster"], df_clusters[v], normalize="index") * 100
+    ax = ct.plot(kind="bar", stacked=True, figsize=(12,5))
+    plt.ylabel("% dentro de clúster")
+    plt.title(f"Distribución de {v} por clúster")
+    plt.legend(bbox_to_anchor=(1.02, 1), loc="upper left", ncol=1)
+    plt.tight_layout()
+    plt.show()
+
+# Correspondencia clúster × estrato 
+if "ESTRATO SOCIOECONÓMICO" in df.columns:
+    tmp = df.loc[df_clusters.index] 
+    cruz = pd.crosstab(tmp["ESTRATO SOCIOECONÓMICO"], df_clusters["cluster"], normalize="index") * 100
+    print("\n== ESTRATO SOCIOECONÓMICO (% filas por estrato, columnas = clúster) ==")
+    print(cruz.round(1))
